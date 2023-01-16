@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Negar's Bakery</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+// Define the array of image URLs
+var images = [
+  "image1.png",
+  "image2.png",
+  "image3.png"
+];
+
+var index = 0;
+
+// Function to show the next image in the slideshow
+function showNextImage() {
+  var img = document.getElementById("slideshow-image");
+  img.src = images[index];
+
+  index = (index + 1) % images.length;
+}
+
+setInterval(showNextImage, 3000);  // Show the next image every 3 seconds
+
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Negar's Bakery</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#about">About Negar</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="about">
+  <h2>About Negar</h2>
+  <img src="negarpicture.jpg" alt="Negar the Baker" style="float:left; width:200px; margin-right:20px;">
+  <p>Meet Negar, the master baker behind Negar's Bakery. With years of experience and a passion for delicious pastries and breads, Negar has built a reputation for creating mouth-watering treats that will make your taste buds sing.</p>
+  <p>Negar's love for baking started at a young age, when she would help her grandmother in the kitchen. She learned the art of baking from her grandmother, who passed down traditional recipes and techniques that Negar still uses today. Negar attended a culinary school and gained a professional diploma in baking and pastry arts. After that, she has been working in different bakeries and patisseries gaining experience and perfecting her skills.</p>
+  <p>Negar's Bakery is known for its traditional and homemade taste. All the products are made from scratch using the finest ingredients, with no preservatives, additives or artificial flavors. Negar's Bakery offers a wide variety of pastries, breads, cakes and desserts. Some of the popular items include croissants, baguettes, sourdough bread, cupcakes, and cakes.</p>
+  <p>Negar's Bakery is committed to using locally sourced ingredients and supporting local farmers. Negar believes that using fresh and high-quality ingredients is essential for producing delicious and healthy products. She also is passionate about creating a community around her bakery, by hosting events and workshops.</p>
+  <p>Stop by Negar's Bakery today and taste the difference that a passion for baking makes.</p>
+<div id="slideshow-container">
+  <img id="slideshow-image" src="image1.png" alt="Slideshow Image">
+</div>
+
+</section>
+
+    <section id="menu">
+      <h2>Menu</h2>
+      <ul>
+        <li>Croissants</li>
+        <li>Baguettes</li>
+        <li>Sourdough Bread</li>
+        <li>Cupcakes</li>
+        <li>Cakes</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Visit us at 123 Main St, Anytown USA</p>
+      <p>Call us at 555-555-5555</p>
+      <p>Email us at negar@negarsbakery.com</p>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright 2021 Negar's Bakery</p>
+  </footer>
+</body>
+</html>
