@@ -43,11 +43,14 @@ main {
 
 section {
   margin-bottom: 20px;
-  text-align: center;
 }
 
 section h2 {
   margin-top: 0;
+}
+
+#contact{
+  text-align: center;
 }
 
 footer {
